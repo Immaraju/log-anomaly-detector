@@ -55,6 +55,8 @@ def visualize_spikes(log_entries, detected_anomalies):
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
+     # Add this line to save the plot before showing it
+    plt.savefig('spike_anomaly_plot.png')
     plt.show()
 
 def save_anomalies_to_db(anomalies, db_file="anomalies.db"):
